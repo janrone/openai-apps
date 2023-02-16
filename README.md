@@ -1,6 +1,15 @@
-# OpenAI API Quickstart - Node.js example app
+# OpenAI Apps
+## My Painter
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+![晚霞](/public/img-sunset-1.png "晚霞")
+
+
+![晚霞](/public/img-sunset-2.png "晚霞")
+
+
+---
+
+This is an example apps used in the OpenAI API . It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
 
 ## Setup
 
@@ -11,7 +20,7 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 3. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-node
+   $ cd openai-apps
    ```
 
 4. Install the requirements
@@ -38,4 +47,9 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    $ npm run dev
    ```
 
-You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! 
+
+---
+### Links:
+
+[OpenAI API Quickstart - Node.js example app](https://github.com/openai/openai-quickstart-node)
