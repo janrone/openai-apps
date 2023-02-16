@@ -1,11 +1,18 @@
 # OpenAI Apps
+---
+
 ## My Painter
+
+![晚霞](/public/img-logo.png "logo")
+
+---
+
+### Some example 
 
 ![晚霞](/public/img-sunset-1.png "晚霞")
 
 
 ![晚霞](/public/img-sunset-2.png "晚霞")
-
 
 ---
 
