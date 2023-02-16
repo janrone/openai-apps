@@ -3,16 +3,18 @@
 
 ## My Painter
 
-![晚霞](/public/img-logo.png "logo")
+Generate logo use openai.
+
+<img src="/public/img-logo.png" width="256" height="256">
 
 ---
 
 ### Some example 
 
-![晚霞](/public/img-sunset-1.png "晚霞")
+| 晚霞1 | 晚霞2 | 
+| ------------- |:-------------:| 
+| <img src="/public/img-sunset-1.png" width="256" height="256">| <img src="/public/img-sunset-2.png" width="256" height="256">|
 
-
-![晚霞](/public/img-sunset-2.png "晚霞")
 
 ---
 
