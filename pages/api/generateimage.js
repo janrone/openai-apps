@@ -15,38 +15,35 @@ export default async function (req, res) {
         return;
     }
 
-    const animal = req.body.animal || '';
-    if (animal.trim().length === 0) {
+    const input = req.body.input || '';
+    if (input.trim().length === 0) {
         res.status(400).json({
             error: {
-                message: "Please enter a valid animal",
+                message: "Please enter a valid input",
             }
         });
         return;
     }
 
     try {
-        console.log("promt:" + animal)
+        console.log("promt:" + input)
 
         const completion = await openai.createImage({
-            prompt: animal,
+            prompt: input,
             //n: 2,
-            n: 2,
-            size: "1024x1024",
+            n: 1,
+            size: "512x512",
         });
 
-        console.log("promt:" + generatePrompt(animal))
-
+    
         console.log("completion" + completion["data"].data)
+        console.log(JSON.stringify(completion["data"].data[0].url))
 
         const image_url = completion["data"].data[0].url;
-
-        console.log(JSON.stringify(completion["data"].data))
-
         res.status(200).json({
             success: true,
-            url: image_url,
-            result: image_url
+            image_url: image_url,
+            result: input
         });
 
     } catch (error) {
