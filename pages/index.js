@@ -16,6 +16,10 @@ export default function Home() {
   const [image_url, setUrl] = useState("/img-sunset-1.png");
   const [isLoaded, setLoaded] = useState(true);
 
+  function handleLoad() {
+    setLoaded(true)
+  }
+
   async function onSubmit(event) {
     setLoaded(false)
     event.preventDefault();
@@ -33,7 +37,6 @@ export default function Home() {
         throw data.error || new Error(`Request failed with status ${response.status}`);
       }
 
-      setLoaded(true)
       setResult(data.result);
       setUrl(data.image_url);
       setInfoInput("");
@@ -99,7 +102,7 @@ export default function Home() {
         </form>
         <div className={styles.result}>{result}</div>
         <div style={{ position: "relative" }}>
-          <img style={{ width: '512px', marginBottom: '40px', opacity: isLoaded ? 1 : ' 0.25' }} src={image_url} />
+          <img onLoad={handleLoad} style={{ width: '512px', marginBottom: '40px', opacity: isLoaded ? 1 : ' 0.25' }} src={image_url} />
 
           {!isLoaded && (
             <div
