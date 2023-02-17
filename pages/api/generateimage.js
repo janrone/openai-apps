@@ -29,8 +29,8 @@ export default async function (req, res) {
         console.log("promt:" + animal)
 
         const completion = await openai.createImage({
-            //prompt: generatePrompt(animal),
             prompt: animal,
+            //n: 2,
             n: 2,
             size: "1024x1024",
         });
@@ -63,10 +63,4 @@ export default async function (req, res) {
             });
         }
     }
-}
-
-function generatePrompt(animal) {
-    const capitalizedAnimal =
-        animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-    return capitalizedAnimal;
 }
