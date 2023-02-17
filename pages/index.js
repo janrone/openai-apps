@@ -33,6 +33,7 @@ export default function Home() {
         throw data.error || new Error(`Request failed with status ${response.status}`);
       }
 
+      setLoaded(true)
       setResult(data.result);
       setUrl(data.image_url);
       setInfoInput("");
