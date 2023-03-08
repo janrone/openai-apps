@@ -32,7 +32,7 @@ export default async function (req, res) {
             prompt: input,
             //n: 2,
             n: 1,
-            size: "601x256",
+            size: "512x512",
         });
 
     
